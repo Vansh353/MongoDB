@@ -7,8 +7,6 @@ Author: Vansh353
 Author-email: vansh.malhotra@seaflux.tech
 License: MIT
 Project-URL: Bug Tracker, https://github.com/Vansh353/MongoDB/issues
-Classifier: Programming Language :: Python :: 3.7
-Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.11
 Classifier: Operating System :: OS Independent
 License-File: LICENSE
