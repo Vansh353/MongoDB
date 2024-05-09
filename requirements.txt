@@ -5,6 +5,6 @@ pandas
 numpy
 ensure
 pytest
-
+tox
 
 -e .
