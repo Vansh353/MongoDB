@@ -1,5 +1,5 @@
 Metadata-Version: 2.1
-Name: mongodb_connector
+Name: mongo_bridge
 Version: 0.0.4
 Summary: A python package for connecting with database.
 Home-page: https://github.com/Vansh353/MongoDB
