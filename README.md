@@ -1,44 +1,34 @@
-# MongoDB
+# Mongo Bridge
+
+Mongo Bridge is a Python package that simplifies the process of connecting to MongoDB databases. It provides a high-level API to connect to your MongoDB databases and perform various operations.
+
+## Installation
+
+Install Mongo Bridge via pip:
+
+```bash
+pip install mongo-bridge
 
 
-requirements_dev.txt we use for the testing
-It makes it easier to install and manage dependencies for development and testing, separate from the dependencies required for production.
+Usage
+Here's a basic example of how to use Mongo Bridge:
 
-difference between requirements_dev.txt and requirements.txt
-requirements.txt is used to specify the dependencies required to run the production code of a Python project, while requirements_dev.txt is used to specify the dependencies required for development and testing purposes.
+from mongo_bridge import MongoDBConnector
 
-tox.ini
-We use if for the testing in the python package testing against different version of the python
+# Create a connector
+mongo=MongoDBConnector(client_url, database, collection_name)
 
-how tox works tox enviornment creation
-Install depedencies and packages
-Run commands
-Its a combination of the (virtualenvwrapper and makefile)
-It creates a .tox
-pyproject.toml
-it is being used for configuration the python project it is a alternative of the setup.cfg file. its containts configuration related to the build system such as the build tool used package name version author license and dependencies
+# Connect to the database
+connector.connect()
 
-setup.cfg
-In summary, setup.cfg is used by setuptools to configure the packaging and installation of a Python projec
+# Perform a query
+mongo.insert_record({"name":"xyz","designation":"student","pass":"yes"},collection_name)
 
-Testing python application
-types of testing
+# Print the results
 
-Automated testing
-Manual testing
-Mode of testing
 
-Unit testing
-Integration tests
-Testing frameworks
 
-pytest
-unittest
-robotframework
-selenium
-behave
-doctest
-check with the code style formatting and syntax(coding standard)
-pylint
-flake8(it is best because it containt 3 library pylint pycodestyle mccabe)
-pycodestyle
+Features
+  -Easy connection to MongoDB databases
+  -High-level API for performing queries
+
