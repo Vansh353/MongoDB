@@ -6,35 +6,27 @@ Mongo Bridge is a Python package designed to simplify the process of connecting 
 
 You can install Mongo Bridge via pip:
 
-\`\`\`bash
 pip install mongo-bridge
-\`\`\`
 
 ## Usage
 
 To start using Mongo Bridge, follow these steps:
 
-1. **Import the \`mongodb_operation\` function from \`mongo_bridge\` module:**
+1. **Import the `mongodb_operation` function from `mongo_bridge` module:**
 
-    \`\`\`python
     from mongo_bridge import mongodb_operation
-    \`\`\`
 
 2. **Configure your MongoDB Atlas connection:**
 
-    Replace the placeholders \`<username>\`, \`<password>\`, \`<cluster-url>\`, \`<app-name>\`, \`<database-name>\`, and \`<collection-name>\` with your actual MongoDB Atlas details.
+    Replace the placeholders `<username>`, `<password>`, `<cluster-url>`, `<app-name>`, `<database-name>`, and `<collection-name>` with your actual MongoDB Atlas details.
 
-    \`\`\`python
     client_url = "mongodb+srv://<username>:<password>@<cluster-url>/?retryWrites=true&w=majority&appName=<app-name>"
     database = "<database-name>"
     collection_name = "<collection-name>"
-    \`\`\`
 
 3. **Create a new client and connect to the server:**
 
-    \`\`\`python
     mongo = mongodb_operation(client_url, database, collection_name)
-    \`\`\`
 
 ## Features
 
@@ -44,13 +36,12 @@ To start using Mongo Bridge, follow these steps:
 
 ## Deployment
 
-Mongo Bridge is available on PyPI for easy installation. You can find it [here](https://pypi.org/project/mongo-bridge/).
+Mongo Bridge is available on PyPI for easy installation. You can find it here: https://pypi.org/project/mongo-bridge/
 
 ## Contributing
 
-We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.md) for more details.
+We welcome contributions! Please see our contributing guidelines for more details: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-EOF
+This project is licensed under the MIT License. See the LICENSE file for details.
